@@ -8,9 +8,9 @@
 
 1. How would you print the string `"Hello World!"` to the terminal?
 
-  ```ruby
-  p "Hello World!"
-  ```
+     ```ruby
+     p "Hello World!"
+     ```
 
 1. What character is used to indicate comments in a ruby file?
 
