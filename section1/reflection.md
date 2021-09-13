@@ -8,9 +8,9 @@
 
 1. How would you print the string `"Hello World!"` to the terminal?
 
-```ruby
-p "Hello World!"
-```
+  ```ruby
+  p "Hello World!"
+  ```
 
 1. What character is used to indicate comments in a ruby file?
 
@@ -22,23 +22,23 @@ p "Hello World!"
 
 1. In the space below, create a variable `animal` that holds the string `"zebra"`
 
-```ruby
-animal = "zebra"
-```
+   ```ruby
+   animal = "zebra"
+   ```
 
 1. How would you print the string `"zebra"` using the variable that you created above?
 
-```ruby
-p animal
-```
+   ```ruby
+   p animal
+   ```
 
 1. What is interpolation? Use interpolation to print a sentence using the variable `animal`.
 
    Interpolation is the use of substitution in strings. String interpolation can be used for inserting computation, variables and other code into a string.
 
-```ruby
-p "The #{animal} is a majestic animal, native to Africa."
-```
+   ```ruby
+   p "The #{animal} is a majestic animal, native to Africa."
+   ```
 
 1. What method is used to get input from a user?
 
