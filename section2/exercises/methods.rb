@@ -12,20 +12,44 @@ print_name
 
 # Write a method that takes a name as an argument and prints it:
 def print_name(name)
-  # YOUR CODE HERE
+  p name
 end
 
 print_name("Albus Dumbledore")
 
-# Write a method that takes in 2 numbers as arguments and prints 
+# Write a method that takes in 2 numbers as arguments and prints
 # their sum. Then call your method three times with different arguments passed in:
-# YOUR CODE HERE
+def print_sum(num1, num2)
+  p num1 + num2
+end
 
-# Write a method that takes in two strings as arguments and prints 
-# a concatenation of those two strings. Example: The arguments could be 
-# (man, woman) and the end result might output: "When Harry Met Sally".  
-# Then call your method three times with different arguments passed in. 
+# Just some dummy values to pass to the method.
+i = 1
+j = 2
 
+# Print the sum three times with some different arguments.
+3.times do
+  print_sum(i, j)
+  i += 1
+  j += 1
+end
+
+
+# Write a method that takes in two strings as arguments and prints
+# a concatenation of those two strings. Example: The arguments could be
+# (man, woman) and the end result might output: "When Harry Met Sally".
+# Then call your method three times with different arguments passed in.
+
+# This is the mad_lib method. It accepts plural_noun, and verb parameters and prints
+# the with string interpolation.
+def mad_lib(plural_noun, verb)
+  p "#{plural_noun} are a great way to #{verb} around town."
+end
+
+# Testing mad_lib function parameter passing.
+mad_lib("tacos", "walk")
+mad_lib("tents", "bike")
+mad_lib("llamas", "stumble")
 
 #-------------------
 # PART 3: Naming is Hard
@@ -37,5 +61,6 @@ print_name("Albus Dumbledore")
 # Look at the code you wrote for the previous YOU DO🎈 - what did you name the function, and why?
 # What did you name each parameter, and why?
 
-# EXPLAIN:
-
+# EXPLAIN: I named the method, mad_lib as the function closely resembles a "mad lib" activity.
+# If the person reading this method doesn't know what a mad lib is they will be very confused.
+# My arguements plural_noun and verb are descriptive, accurate and descriptive of what the user should input.
