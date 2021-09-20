@@ -8,24 +8,25 @@ foods = {apples: 23, grapes: 507, eggs: 48}
 p foods
 
 # Write code that prints a hash holding zoo animal inventory:
-zoo = #YOUR CODE HERE
+zoo = {porcupines: 2, elephants:6, platypus: 3, kangaroos: 22}
 p zoo
 
 # Write code that prints all of the 'keys' of the zoo variable 
 # you created above:
-# YOUR CODE HERE
+p zoo.keys
 
 # Write code that prints all of the 'values' of the zoo variable 
 # you created above:
-# YOUR CODE HERE
+p zoo.values
 
 # Write code that prints the value of the first animal of the zoo variable 
 # you created above:
-# YOUR CODE HERE
+p zoo.values.first
 
 # Write code that adds an animal to the zoo hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+zoo[:eagle] = 4
+p zoo
 
 
 #-------------------
@@ -38,17 +39,18 @@ p zoo
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-
+email_data = {sender: 'taco@gmail.com', receiver: 'burrito@gmail.com', subject: 'I am the best food!', date_sent: '2021_09_19', time_sent: '22:33'}
 # Write code that prints your email hash to the terminal.
+p email_data
 
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email_data.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email_data.values
 
 
 #-------------------
@@ -99,3 +101,21 @@ puts posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Object Literals, using the same 
 # key-value pairs you used in your email Object above.
 # Then, log the email Array to the console.
+email = [
+  {
+    sender: 'taco@gmail.com',
+    receiver: 'burrito@gmail.com',
+    subject: 'I am the best food!',
+    date_sent: '2021_09_19',
+    time_sent: '22:33'
+  },
+  {
+    sender: 'kangaroo@gmail.com',
+    receiver: 'wallaby@gmail.com',
+    subject: 'I am the cutiest Australian animal!',
+    date_sent: '2021_09_19',
+    time_sent: '13:22'
+  }
+]
+
+puts email
