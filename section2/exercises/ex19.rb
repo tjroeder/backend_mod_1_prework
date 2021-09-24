@@ -1,3 +1,5 @@
+# Learn Ruby the Hard Way exercise #19.
+
 # cheese_and_crackers takes two parameters, cheese_count and boxes_of_crackers and returns readouts of the amounts.
 def cheese_and_crackers(cheese_count, boxes_of_crackers)
   puts "You have #{cheese_count} cheeses!" # Prints amount of cheeses.
@@ -7,7 +9,8 @@ def cheese_and_crackers(cheese_count, boxes_of_crackers)
 end
 
 
-puts "We can just give the function numbers directly:"
+puts 'We can just give the function numbers directly:'
+
 # Passes values directly to the method.
 cheese_and_crackers(20, 30)
 
@@ -33,15 +36,15 @@ cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
 def grill_cheese(bread, cheese, cheese_num, melt)
   # If cheese_num is greater than 3 cheese slices you want it extra cheesy.
   if cheese_num > 3
-    # Patty melt of grilled cheese sando.
+    # Patty melt instead of grilled cheese sando.
     if melt == true
       puts "We got one extra cheesy #{cheese} patty melt on #{bread}, coming right up!"
     else
       puts "We got one extra cheesy #{cheese} grilled cheese on #{bread}, coming right up!"
     end
-  # This is for less cheesy sandos.
+  # For less cheesey sandwich
   else
-    # Patty melt of grilled cheese sando.
+    # Patty melt instead of grilled cheese sando.
     if melt == true
       puts "We got one cheesy #{cheese} patty melt on #{bread}, coming right up!"
     else
@@ -61,7 +64,7 @@ patty_melt = true
 bread = whole_grain + " " + bread_type
 
 # Collect user input for bread type.
-puts "Lets make a custom sando for ya."
+puts 'Lets make a custom sando for ya.'
 puts "What type of bread you want? \n"
 user_bread = gets.chomp
 
@@ -79,17 +82,17 @@ user_melt = gets[0] == 'y'
 
 # This is just some different ways of calling the grill_cheese method.
 grill_cheese(bread_type, cheese_type, num_cheese_slices, patty_melt)
-grill_cheese(bread_type, "gouda", 1000, false)
-grill_cheese(bread_type, "gouda", 1000, true)
-grill_cheese(bread_type, "gouda", 500, false)
-grill_cheese(bread_type, "gouda", 500, true)
+grill_cheese(bread_type, 'gouda', 1000, false)
+grill_cheese(bread_type, 'gouda', 1000, true)
+grill_cheese(bread_type, 'gouda', 500, false)
+grill_cheese(bread_type, 'gouda', 500, true)
 grill_cheese(bread_type, cheese_type, 1000, false)
 grill_cheese(whole_grain + " " + bread_type, cheese_type, 1000, false)
 grill_cheese(bread, cheese_type, 1000, false)
 grill_cheese(whole_grain + " " + bread_type, cheese_type, 1000, true)
 grill_cheese(bread, cheese_type, 1000, true)
-grill_cheese("tortilla", cheese_type, 1000, false)
+grill_cheese('tortilla', cheese_type, 1000, false)
 
 # This is the output for the custom user defined sando order.
-puts "Here is your custom sando order:"
+puts 'Here is your custom sando order:'
 grill_cheese(user_bread, user_cheese, user_cheese_num, user_melt)
