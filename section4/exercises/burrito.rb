@@ -9,6 +9,8 @@
 #   user input if they inputed a numeric value. I thought that would be 
 #   definitly out of scope of this exercise.
 
+# Create burrito class.
+
 class Burrito
   attr_reader :protein, :base, :toppings
  
