@@ -23,15 +23,32 @@ def print_sum(num1, num2)
   p num1 + num2
 end
 
-# Just some dummy values to pass to the method.
+# Inital values to pass to the times loop.
 i = 1
 j = 2
 
-# Print the sum three times with some different arguments.
+# Loop print_sum three times with different arguments by incrementing
+#   input variables each loop.
 3.times do
   print_sum(i, j)
   i += 1
-  j += 1
+  j += 2
+end
+
+# Another way to complete the problem if given integer arrays as inputs.
+
+# Declare two integer arrays, with three values. 
+i = [1, 2, 3]
+j = [4, 5, 6]
+
+# Declare loop counter, this is used for selecting the array indexes
+k = 0
+
+# Loop print_sum three times, iterating through one array element index each
+#   loop.
+3.times do
+  print_sum(i[k], j[k])
+  k += 1
 end
 
 
@@ -40,13 +57,13 @@ end
 # (man, woman) and the end result might output: "When Harry Met Sally".
 # Then call your method three times with different arguments passed in.
 
-# This is the mad_lib method. It accepts plural_noun, and verb parameters and prints
-# the with string interpolation.
+# mad_lib method accepts a plural_noun, and verb parameters and
+#   prints them with string interpolation.
 def mad_lib(plural_noun, verb)
   p "#{plural_noun} are a great way to #{verb} around town."
 end
 
-# Testing mad_lib function parameter passing.
+# Testing mad_lib method with multiple parameters.
 mad_lib("tacos", "walk")
 mad_lib("tents", "bike")
 mad_lib("llamas", "stumble")
@@ -61,6 +78,8 @@ mad_lib("llamas", "stumble")
 # Look at the code you wrote for the previous YOU DO🎈 - what did you name the function, and why?
 # What did you name each parameter, and why?
 
-# EXPLAIN: I named the method, mad_lib as the function closely resembles a "mad lib" activity.
-# If the person reading this method doesn't know what a mad lib is they will be very confused.
-# My arguements plural_noun and verb are descriptive, accurate and descriptive of what the user should input.
+# EXPLAIN: I named the method, mad_lib as the function closely resembles a "mad
+#   lib" activity. If the person reading this method doesn't know what a mad
+#   lib is they will be very confused. I could possibly call it something like
+#   phrase_creator or similar. My arguements plural_noun and verb area
+#   descriptive, accurate and descriptive of what the user should input.
