@@ -41,8 +41,11 @@
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
 
+# Declare variable.
 num_quarters = 3
 
+# If num_quarters is greater than or equal to 2, print string output. Otherwise
+#   print different string output.
 if num_quarters >= 2
   puts "I have enough money for a gumball"
 else
@@ -63,15 +66,15 @@ end
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
 
-cups_of_flour = 3
+# Declare variables.
+cups_of_flour = 1
 has_sauce = true
 
-if has_sauce == true
-  if cups_of_flour >= 2
+# If statements to check if pizza can be made. If has_sauce is true, and
+#   cups_of_flour is greater than or equal to 2, than pizza can be made.
+#   Otherwise pizza cannot be made. Print appropriate output for each branch.
+if has_sauce == true && cups_of_flour >= 2
     p "I can make pizza"
-  else
-    p "I cannot make pizza"
-  end
 else
   p "I cannot make pizza"
 end
