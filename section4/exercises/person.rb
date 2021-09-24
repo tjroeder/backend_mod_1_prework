@@ -8,7 +8,9 @@ class Person
   attr_accessor :name, :height, :weight, :tired, :exercise_time, :bmi
 
   # Initialize the attributes. BMI is calculated using weight and height
-  #   CDC BMI formula.
+  #   CDC BMI formula. To calculate BMI weight and height attributes changed to
+  #   float. If integers are used the integer division will result in
+  #   "rounding" to zero. Floats give precision to the fractional value.
   def initialize(name, height_inches, weight_lbs, tired)
     @name = name
     @height = height_inches
@@ -33,7 +35,7 @@ class Person
     return category
   end
 
-  # Method takes in a time from the user, and determines based on the Person 
+  # Method takes in a time from the user, and determines based on the class
   #   instance's BMI, whether they will be tired after exercise.
   def exercise(time)
     # If tired, cannot execute the exercise method.
@@ -41,7 +43,7 @@ class Person
       return "I'm tired, lets exercise another time."
     end
 
-    # Increase total exercise time by the session time while Person is not
+    # Increase total exercise time by the session time while self is not
     #   tired.
     @exercise_time += time
 
@@ -78,7 +80,10 @@ class Person
   end
 end
 
+# Create new class instance, and pass initial variables.
 shaq = Person.new('Shaq', 85, 325, false)
+
+# Test calling class methods and print out the results.
 p shaq.name
 p shaq.height
 p shaq.weight
